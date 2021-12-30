@@ -67,5 +67,5 @@ const scrollReveal = ScrollReveal({
   
 scrollReveal.reveal(
     `body h1, body p,
-    .container, .container-wrapper
+    .container, .container-wrapper,
     `, { interval: 100});
