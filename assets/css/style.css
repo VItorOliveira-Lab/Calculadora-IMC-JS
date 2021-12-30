@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+
+body h1 {
+    text-align: center;
+    position: relative;
+    top: 6rem;
+}
+
+body p {
+    text-align: center;
+    position: relative;
+    top: 10rem;
+    color: gray;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.container-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    position: relative;
+}
+
+.container-wrapper .input input {
+    margin: 0 1rem;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: none;
+    transition: .3s;
+    padding-bottom: .2rem;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.container-wrapper .input input::placeholder {
+    font-weight: bolder;
+    color: gray;
+}
+
+
+.container-wrapper .input input:focus {
+    border-bottom: 2px solid black;
+}
+
+.container-wrapper .input button {
+    border: 2px solid black;
+    padding: .6rem 1rem;
+    margin-bottom: .7rem;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-right: 5px;
+    border-radius: .5rem;
+}
+
+.container-wrapper .input button:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.modal-result {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.modal-result.active {
+    top: 0;
+}
+
+.modal-container {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.modal-container p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.modal-container button {
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border: 0;
+    transition: .3s;
+}
+
+.modal-container button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column;
+    }
+
+    .container-wrapper .input {
+        margin: 1rem 0;
+    }
+
+    .container-wrapper .input input {
+        width: 29rem;
+    }
+}
