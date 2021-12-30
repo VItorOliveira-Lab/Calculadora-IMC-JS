@@ -15,7 +15,7 @@ body h1 {
 body p {
     text-align: center;
     position: relative;
-    top: 10rem;
+    top: 8rem;
     color: gray;
     font-weight: bolder;
 }
@@ -33,7 +33,6 @@ body p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2%;
     position: relative;
 }
 
@@ -115,6 +114,7 @@ body p {
     color: white;
     border: 0;
     transition: .3s;
+    margin: 20rem 0;
 }
 
 .modal-container button:hover {
@@ -123,15 +123,36 @@ body p {
 }
 
 @media screen and (max-width: 768px) {
+
+    body p {
+        margin: 2rem 0;
+    }
+
+    .container {
+        justify-content: flex-start;
+    }
     .container-wrapper {
         flex-direction: column;
+        margin-top: 15rem;
     }
 
     .container-wrapper .input {
         margin: 1rem 0;
     }
 
+    .container-wrapper .input {
+        width: 70%;
+    }
+
     .container-wrapper .input input {
-        width: 29rem;
+        width: 100%;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button button {
+        margin-left: 2rem;
     }
 }
