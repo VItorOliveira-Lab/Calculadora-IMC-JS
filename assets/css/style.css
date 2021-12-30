@@ -106,7 +106,9 @@ body p {
 }
 
 .modal-container button {
+    display: block;
     position: absolute;
+    top: -20rem;
     right: 0;
     padding: 5px 10px;
     cursor: pointer;
@@ -124,16 +126,11 @@ body p {
 
 @media screen and (max-width: 768px) {
 
-    body p {
-        margin: 2rem 0;
-    }
-
     .container {
         justify-content: flex-start;
     }
     .container-wrapper {
         flex-direction: column;
-        margin-top: 15rem;
     }
 
     .container-wrapper .input {
@@ -154,5 +151,8 @@ body p {
     }
     .button button {
         margin-left: 2rem;
+    }
+    .close-modal {
+        background-color: red;
     }
 }

@@ -35,11 +35,11 @@ function verificateImc(imc) {
     }else {
         return "obesidade grau III. Cuidado!"
     }
-}
+};
 function openModal() {
     let modal = document.querySelector(".modal-result")
     modal.classList.add("active");
-}
+};
 
 let buttonCloseModal = document.querySelector(".close-modal");
 buttonCloseModal.addEventListener("click", closeModal)
@@ -47,10 +47,25 @@ buttonCloseModal.addEventListener("click", closeModal)
 function closeModal(){
     document.querySelector(".modal-result").classList.remove("active")
     clearInputs();
-}
+};
 
 function clearInputs() {
     inputName.value = "";
     inputHeight.value = "";
     inputWeight.value = "";
-}
+};
+
+
+// Scroll Reveal
+
+const scrollReveal = ScrollReveal({
+    origin: 'left',
+    distance: '40px',
+    duration: 500,
+    reset: true
+});
+  
+scrollReveal.reveal(
+    `body h1, body p,
+    .container, .container-wrapper
+    `, { interval: 100});
